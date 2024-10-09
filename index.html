@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Hotdog Stand Order</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Welcome to Joe's Hotdog Stand</h1>
+    <p>How many of each item would you like, please place your order and we'll calculate the total for you (found in the receipt below)</p>
+
+    <div class="order-form">
+        <label for="numDogs">Hotdogs ($4.80 each):</label>
+        <input type="number" id="numDogs" value="0" min="0">
+        <br>
+
+        <label for="numFries">Fries ($3.95 each):</label>
+        <input type="number" id="numFries" value="0" min="0">
+        <br>
+
+        <label for="numSoda">Sodas ($1.99 each):</label>
+        <input type="number" id="numSoda" value="0" min="0">
+        <br><br>
+
+        <button onclick="calculateOrder()">Calculate Order</button>
+    </div>
+
+    <div class="order-summary" id="orderSummary">
+       
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
